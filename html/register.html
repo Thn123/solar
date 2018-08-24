@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../css/bootstrap.css"/>
+  <link rel="stylesheet" href="../css/index.css"/>
+  <title>用户注册信息</title>
+  <style>
+    body{
+      background: #ddd;
+    }
+    .main {
+      position: relative;
+      margin:15px 100px 15px 100px;
+    }
+    .box {
+      width: 600px;
+      min-height: 300px;
+      background: rgba(255,255,255, .7);
+      border-radius: 5px;
+      margin:0 auto;
+      padding: 1.5em;
+    }
+  </style>
+</head>
+<body>
+  <!--异步请求头部信息-->
+  <div class="header"></div>
+  <!--主体-->
+  <div class="container main">
+    <div class="box">
+      <form class="form-horizontal">
+        <div class="form-group">
+          <div class="col-sm-2">
+            <label class="control-label" for="uname">用户名：</label>
+          </div>
+          <div class="col-sm-5">
+            <input class="form-control" id="uname" placeholder="请输入您想注册的用户名">
+          </div>
+          <div class="col-sm-5">
+            <span class="help-block">用户名不能为空</span>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-sm-2">
+            <label class="control-label" for="upwd">密码：</label>
+          </div>
+          <div class="col-sm-5">
+            <input class="form-control" type="password" id="upwd" placeholder="请输入您想注册的密码">
+          </div>
+          <div class="col-sm-5">
+            <span class="help-block">密码不能为空</span>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="col-sm-2">
+            <label class="control-label">性别：</label>
+          </div>
+          <div class="radio col-sm-2">
+            <label for="sex1">
+              <input  type="radio" name="sex" id="sex1">男
+            </label>
+          </div>
+          <div class="radio col-sm-3">
+            <label for="sex2">
+              <input type="radio" name="sex" id="sex2">女
+            </label>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-sm-2">
+            <label class="control-label" for="homepage">日期：</label>
+          </div>
+          <div class="col-sm-5">
+            <input class="form-control" id="homepage" type="date">
+          </div>
+          <div class="col-sm-5">
+            <span class="help-block"></span>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-sm-2">
+            <label class="control-label" for="homepage">电话：</label>
+          </div>
+          <div class="col-sm-5">
+            <input class="form-control" id="telphone" type="tel">
+          </div>
+          <div class="col-sm-5">
+            <span class="help-block"></span>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-sm-2">
+            <label class="control-label" for="umail">邮件：</label>
+          </div>
+          <div class="col-sm-5">
+            <input class="form-control" id="umail" type="email" placeholder="请输入您的邮箱地址">
+          </div>
+          <div class="col-sm-5">
+            <span class="help-block"></span>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-sm-5 col-sm-offset-2">
+            <input id="bt-register" class="btn btn-success btn-block" type="button" value="注册">
+          </div>
+        </div>
+      </form>
+      </div>
+    </div>
+  <!--异步请求尾部信息-->
+  <div id="footer"></div>
+  <script src="../js/jquery-1.11.3.js"></script>
+  <script src="../js/register.js"></script>
+</body>
+</html>
